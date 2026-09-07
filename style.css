@@ -333,14 +333,15 @@ box-shadow:0 0 20px rgba(255,120,220,.5),0 8px 18px rgba(80,80,180,.3);
 /* SECTION 1 - WELCOME */
 .sec-welcome {
     padding: 50px 40px;
-    background: linear-gradient(180deg, #bcdcf5 0%, #d8ecfa 55%, #8fc97a 55%, #6fae5e 100%);
+    background: url('assets/textures/1683094868053675.jpg') center/cover no-repeat;
 }
 
 .section-label {
     font-family: "Delivery", Arial, sans-serif;
     font-size: 26px;
-    color: #22314d;
+    color: #fff;
     margin: 0 0 20px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
 }
 
 .welcome-grid {
@@ -353,6 +354,32 @@ box-shadow:0 0 20px rgba(255,120,220,.5),0 8px 18px rgba(80,80,180,.3);
     flex: 1;
     min-width: 220px;
     font-size: 16px;
-    color: #223;
+    color: #fff;
     line-height: 1.6;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.cat-corner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.signpost {
+    background: #fff;
+    border: 2px solid #333;
+    padding: 10px 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    color: #222;
+    transform: rotate(-3deg);
+    box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+}
+
+.cat-photo {
+    width: 110px;
+    image-rendering: pixelated;
 }
