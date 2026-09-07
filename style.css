@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #b9dcff;
+    font-family: Arial, sans-serif;
+}
+
+/* Fake Internet Explorer */
+.browser{
+    width: 100%;
+}
+
+/* Blue Window Title Bar */
+.title-bar{
+    height: 32px;
+    background: linear-gradient(
+        to bottom,
+        #4a91e8,
+        #1451ad
+    );
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.browser-title{
+    font-weight: bold;
+}
+
+.window-buttons{
+    display: flex;
+    gap: 3px;
+}
+
+.window-buttons span{
+    width: 25px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b7bd3;
+    border: 1px solid #9ec8ff;
+    font-size: 14px;
+}
+
+/* Grey Toolbar */
+.toolbar{
+    height: 38px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 8px;
+    border: 1px solid #999999;
+}
+
+/* URL box */
+.url-box{
+    flex: 1;
+    height: 25px;
+    background-color: white;
+    border: 1px solid #999999;
+    padding: 4px 8px;
+    font-size: 13px;
+    color: #333333;
+}
+
+/* Content Area */
+main {
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    color: white;
+    text-shadow: 3px 3px 0 #2453a6;
+}
