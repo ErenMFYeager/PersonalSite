@@ -98,6 +98,27 @@ body{
     color: #333333;
 }
 
+/* STATUS BAR / VISITOR COUNTER */
+.statusbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 6px;
+    background: #e4e9f7;
+    border-bottom: 2px solid #b9c6e8;
+    padding: 6px 20px;
+    font-size: 13px;
+    color: #3b4664;
+}
+
+.statusbar .counter {
+    background: #000;
+    color: #0f0;
+    padding: 1px 8px;
+    letter-spacing: 2px;
+    font-family: monospace;
+}
+
 /* =========================
    HERO SECTION
    ========================= */
@@ -255,4 +276,83 @@ transform:rotate(6deg);
 bottom:9%;
 right:28%;
 transform:rotate(-3deg);
+}
+
+.desktop-nav{
+position:relative;
+z-index:4;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+flex-wrap:wrap;
+gap:28px;
+margin-top:55px;
+padding:0 40px;
+}
+
+.desktop-icon{
+width:95px;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:7px;
+color:#344263;
+text-decoration:none;
+font-family:"Delivery",Arial,sans-serif;
+font-size:13px;
+font-weight:bold;
+letter-spacing:.5px;
+text-align:center;
+text-shadow:1px 1px 0 rgba(255,255,255,.8);
+transition:.2s ease;
+}
+
+.desktop-icon .icon{
+width:58px;
+height:58px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:42px;
+background:rgba(255,255,255,.2);
+border:1px solid rgba(255,255,255,.35);
+border-radius:12px;
+box-shadow:inset 0 1px 8px rgba(255,255,255,.45),0 5px 14px rgba(60,70,130,.2);
+}
+
+.desktop-icon:hover{
+transform:translateY(-8px) scale(1.08);
+color:#ff4fc3;
+}
+
+.desktop-icon:hover .icon{
+background:rgba(255,255,255,.55);
+box-shadow:0 0 20px rgba(255,120,220,.5),0 8px 18px rgba(80,80,180,.3);
+}
+
+/* SECTION 1 - WELCOME */
+.sec-welcome {
+    padding: 50px 40px;
+    background: linear-gradient(180deg, #bcdcf5 0%, #d8ecfa 55%, #8fc97a 55%, #6fae5e 100%);
+}
+
+.section-label {
+    font-family: "Delivery", Arial, sans-serif;
+    font-size: 26px;
+    color: #22314d;
+    margin: 0 0 20px;
+}
+
+.welcome-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.welcome-text {
+    flex: 1;
+    min-width: 220px;
+    font-size: 16px;
+    color: #223;
+    line-height: 1.6;
 }
